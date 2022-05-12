@@ -24,7 +24,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: blue">
 			<div>
-				<a href="https://www.xadmin.net" class="navbar-brand"> Film
+				<a href="./" class="navbar-brand"> Film
 					Listing Application </a>
 			</div>
 

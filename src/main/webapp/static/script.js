@@ -34,30 +34,3 @@ $(document).ready(function() {
 	});
 
 });
-
-$("#myForm").submit(function(event) {
-	event.preventDefault();
-	alert("Handler for .submit() called.");
-	event.preventDefault();
-
-	let endpoint = './rest/films'
-		+ $("#film-id").val();
-
-
-	let data = JSON.stringify($("#myForm").serializeArray());
-
-	$.ajax({
-		type: 'PUT',
-		url: endpoint,
-		contentType: 'application/json',
-		data: data, // access in body
-	}).done(function() {
-		console.log('SUCCESS');
-	}).fail(function(msg) {
-		console.log('FAIL');
-	}).always(function(msg) {
-		console.log('ALWAYS');
-	});
-
-
-});
